@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Gastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Gastronomía Tradicional</title>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Cultura en Huautla</div>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="De nosotros.html">Cultura</a></li>
+      <li><a href="Servicios.html">Lugares</a></li>
+      <li><a class="active" href="">Gastronomía</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <h1>Gastronomía cultural</h1>
+      <p>
+        Sabores únicos de la región que dejan un experiencia única de para que el viajero tenga ganas de regresar pronto
+      </p>
+      <a onclick="document.getElementById('blog-1').scrollIntoView({behavior:'smooth'})" class="button">Explorar gastronomía</a>
+    </div>
+  </header>
+
+<!-- PLATILLOS DESTACADOS -->
+<section class="ofert container">
+    <div class="ofert-1">
+        <div class="ofert-img">
+            <img src="Fotos/TaMo.jpg" loading="lazy" alt="Tamales de mole">
+        </div>
+        <div class="ofert-txt">
+            <h2>Tamales de Mole</h2>
+            <p>Preparadas para dar un toque en alguna fiesta especial del pueblo</p>
+            <a href="#" class="btn-2">Historia</a>
+        </div>
+    </div>
+
+    <div class="ofert-1">
+        <div class="ofert-img">
+            <img src="Fotos/TaTe.jpg" loading="lazy" alt="Tamales de tesmole">
+        </div>
+        <div class="ofert-txt">
+            <h2>Tamales de Tesmole</h2>
+            <p>Tamales tradicionales envueltos en hoja de plátano o maíz. Pueden ser simples o rellenos de tesmole.</p>
+            <a href="#" class="btn-2">Historia</a>
+        </div>
+    </div>
+
+    <div class="ofert-1">
+        <div class="ofert-img">
+            <img src="Fotos/TaRa.jpg" loading="lazy" alt="Tamales de rajas">
+        </div>
+        <div class="ofert-txt">
+            <h2>Tamales de Rajas</h2>
+            <p>Una opción cotidiana que se prepara con dedicación y esmero para el cliente</p>
+            <a href="#" class="btn-2">Historia</a>
+        </div>
+    </div>
+</section>
+
+<!-- PLATILLOS -->
+<main class="products container">
+    <h2>Platillos Tradicionales</h2>
+
+    <div class="product-content">
+        <div class="product">
+            <img src="Fotos/memelas.jfif" loading="lazy" alt="Memelas">
+            <h3>Memelas de la región</h3>
+            <p>
+                Un platillo de la región con ingredientes y un sabor único
+                dependiendo de donde lo compres
+            </p>
+        </div>
+
+        <div class="product">
+            <img src="Fotos/pilte(1).jpg" loading="lazy" alt="Pilte ceremonial">
+            <h3>Pilte ceremonial</h3>
+            <p>
+                Esta es una variante de lo que que se conoce como pilte
+                ya que puede suele ser para celebraciones
+            </p>
+        </div>
+
+        <div class="product">
+            <img src="Fotos/descarga(2).jfif" loading="lazy" alt="Tamales de tesmole">
+            <h3>Tamales tradicionales</h3>
+            <p>
+                Receta que se ha pasado de generación en generación con
+                la intención de recordar la cultura
+            </p>
+        </div>
+    </div>
+</main>
+
+<!-- INFORMACIÓN CULTURAL -->
+<section class="blog container" id="blog-1">
+    <div class="blog-1">
+        <img src="Fotos/Ca_1.jpg" loading="lazy" alt="">
+        <h2>Caldo de chivo</h2>
+        <p class="resumen">
+            Platillo fuerte y tradicional, preparado con chivo, hierbas y especias.
+        </p>
+        
+        <p class="extra">
+            Este platillo tiene raíces profundas en celebraciones comunitarias,
+            donde se comparte como símbolo de unión y tradición familiar.
+        </p>
+        
+        <a class="btn-2 leer-mas">Leer más</a>
+    </div>
+
+    <div class="blog-1">
+        <img src="Fotos/Ca_2.jpg" loading="lazy" alt="Tesmole tradicional">
+        <h2>Tesmole</h2>
+    
+        <p class="resumen">
+            El tesmole es un guiso espeso típico de Huautla de Jiménez.
+        </p>
+    
+        <p class="extra">
+            Este platillo se cocina lentamente para lograr una consistencia suave
+            y un sabor profundo. Cada familia tiene su propia variante, ajustando
+            el tipo de chile o el espesor del caldo, lo que mantiene viva la
+            tradición culinaria mazateca.
+        </p>
+    
+        <a class="btn-2 leer-mas">Leer más</a>
+    </div>
+    
+    <div class="blog-1">
+        <img src="Fotos/ca_3.webp" loading="lazy" alt="Mole mazateco">
+        <h2>Mole mazateco</h2>
+    
+        <p class="resumen">
+            El mole mazateco es una salsa tradicional elaborada con chiles secos.
+        </p>
+    
+        <p class="extra">
+            Su preparación combina ingredientes locales y técnicas ancestrales,
+            logrando un equilibrio entre picante, aroma y profundidad de sabor.
+        </p>
+    
+        <a class="btn-2 leer-mas">Leer más</a>
+    </div>
+</section>
+
+<!-- Bebidas del lugar -->
+<main class="products container">
+    <h2>Bebidas del lugar</h2>
+
+    <div class="product-content">
+        <div class="product">
+            <img src="Fotos/Tejate.webp" loading="lazy" alt="Tejate Oaxaqueño">
+            <h3>Tejate Oaxaqueño</h3>
+            <p>
+                Una debida que se hace con una técnica especial, pero
+                se vende en muchos lugares de Oaxaca.
+            </p>
+        </div>
+
+        <div class="product">
+            <img src="Fotos/5.jpeg" loading="lazy" alt="Chocolate mazateco">
+            <h3>Chocolate mazateco</h3>
+            <p>
+                Es un chocolate artesanal, molido con cacao, canela y azúcar
+                suele ser para fiestas, rituales o reuniones.
+            </p>
+        </div>
+
+        <div class="product">
+            <img src="Fotos/4.png" loading="lazy" alt="Atole de maíz">
+            <h3>Atole de Maiz</h3>
+            <p>
+                Es una bebida espesa y caliente que suele ser blanco o endulzado,
+                común en desayunos o celebraciones.
+            </p>
+        </div>
+        <div class="product">
+            <img src="Fotos/2.jpg" loading="lazy" alt="Atole agrio">
+            <h3>Atole agrio</h3>
+            <p>
+                Es común para tradiciones en contexto mazateco y en la vida cotidiana,
+                suele tener un sabor ligeramente ácido.
+            </p>
+        </div>
+
+        <div class="product">
+            <img src="Fotos/3.webp" loading="lazy" alt="Tepache">
+            <h3>Tepache</h3>
+            <p>
+                Bebida fermentada a base de piña o maíz, refrescante y de bajo contenido
+                alcohólico, es consumida popularmente.
+            </p>
+        </div>
+
+        <div class="product">
+            <img src="Fotos/1.jpg" loading="lazy" alt="Agua de chilacayota">
+            <h3>Agua de chilacayota</h3>
+            <p>
+                Bebida dulce hecha con chilacayota cocida con piloncillo y canela.
+                Muy común en hogares tradicionales.
+            </p>
+        </div>
+        <div class="product">
+            <img src="Fotos/7.jpg" loading="lazy" alt="Mezcal serrano">
+            <h3>Mezcal serrano</h3>
+            <p>
+                Mezcal artesanal producido en comunidades cercanas. Se consume en
+                celebraciones, rituales y actos sociales importantes.
+            </p>
+        </div>
+
+        <div class="product">
+            <img src="Fotos/6.webp" loading="lazy" alt="Agua de cacao">
+            <h3>Agua de cacao</h3>
+            <p>
+                Es una bebida tradicional de la región que normalmente se da cuando
+                alguien tiene mucho tiempo esperando a otra persona.
+            </p>
+        </div>
+    </div>
+</main>
+
+<!-- VALORES GASTRONÓMICOS -->
+<section class="icons container">
+    <div class="icon-1">
+        <div class="icon-img">
+            <img src="Icons/instagram.ico" loading="lazy" alt="">
+        </div>
+        <div class="icon-txt">
+            <h3>Ingredientes locales</h3>
+            <p>Productos de temporada cultivados en la región.</p>
+        </div>
+    </div>
+
+    <div class="icon-1">
+        <div class="icon-img">
+            <img src="Icons/Tiktok.ico" loading="lazy" alt="">
+        </div>
+        <div class="icon-txt">
+            <h3>Recetas ancestrales</h3>
+            <p>Saberes culinarios transmitidos por generaciones.</p>
+        </div>
+    </div>
+
+    <div class="icon-1">
+        <div class="icon-img">
+            <img src="Icons/Face.ico" loading="lazy" alt="">
+        </div>
+        <div class="icon-txt">
+            <h3>Cultura viva</h3>
+            <p>La gastronomía como expresión de identidad cultural.</p>
+        </div>
+    </div>
+</section>
+
+<button id="backToTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<footer class="footer parallax-footer">
+  <div class="footer-overlay"></div>
+
+  <div class="footer-container reveal">
+    
+    <div class="footer-brand">
+      <h2>Huautla de Jiménez</h2>
+      <p>Donde la naturaleza y el espíritu se encuentran.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Explora</h3>
+      <ul>
+        <li><a href="Servicios.html">Lugares turísticos</a></li>
+        <li><a href="index.html">Cultura Mazateca</a></li>
+        <li><a onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})">Gastronomía</a></li>
+        <li><a href="De nosotros.html">Eventos</a></li>
+        <li><a href="Comentar.html">Comentar</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+        <h3>Contacto</h3>
+        <p>Email: garciabenjamtz@gmail.com</p>
+        <p>Tel: +52 000 000 0000</p>
+        <div class="social">
+            <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.4V12h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z" />
+                </svg>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 6a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm4.5-.9a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M16 3c.3 2 1.9 3.6 3.9 3.9v3.1c-1.5 0-3-.5-4.2-1.3v5.8a5.5 5.5 0 1 1-5.5-5.5c.4 0 .8 0 1.2.1v3.2a2.3 2.3 0 1 0 1.6 2.2V3h3z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+  </div>
+</footer>
+
+<script src="Js/footer.js"></script>
+<script src="Js/Gastro.js"></script>
+
+</body>
+</html>

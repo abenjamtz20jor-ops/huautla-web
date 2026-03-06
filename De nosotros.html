@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cultura Viva | Huautla de Jiménez</title>
+  <link rel="stylesheet" href="CSS/De nosotros.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Cultura en Huautla</div>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="" class="active">Cultura</a></li>
+      <li><a href="Servicios.html">Lugares</a></li>
+      <li><a href="Gastro.html">Gastronomía</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+
+    <div class="hero-slider">
+      <div class="hero-slide active" style="background-image: url('Fotos/Mapa.png');"></div>
+      <div class="hero-slide" style="background-image: url('Fotos/atardecer.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('Fotos/rios.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('Fotos/huehuentones-42.jpg');"></div>
+    </div>
+  
+    <div class="hero-content">
+      <h1>Huautla de Jiménez</h1>
+      <p>
+        Cuna de la cultura mazateca, donde la danza, la espiritualidad
+        y la tradición siguen vivas.
+      </p>
+      <button>
+        <a onclick="document.getElementById('gal').scrollIntoView({behavior:'smooth'})">
+          Explorar cultura
+        </a>
+      </button>
+    </div>
+  
+  </header>
+
+  <!-- IDENTIDAD -->
+  <section>
+    <h2 class="section-title">Identidad Mazateca</h2>
+    <p class="intro">
+      Huautla de Jiménez es un territorio sagrado donde la cosmovisión mazateca
+      se manifiesta en rituales, lengua, música y danzas que fortalecen
+      la relación entre la comunidad, la naturaleza y el mundo espiritual.
+    </p>
+  </section>
+  
+
+<!--Expresion-->
+<section>
+    <h2 class="section-title">Expresiones culturales</h2>
+    <div class="card-group">
+        <div class="card">
+            <img src="Fotos/Hue.jpeg" loading="lazy">
+            <div class="info">
+                <h3>Huehuentones</h3>
+                <p>Representación simbólica del encuentro entre vivos y muertos durante el Día de Muertos.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Fotos/descarga (1).jfif" loading="lazy">
+            <div class="info">
+                <h3>Medicina tradicional</h3>
+                <p>Prácticas ancestrales de sanación basadas en plantas y rituales espirituales.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Fotos/art.png" loading="lazy">
+            <div class="info">
+                <h3>Artesanías</h3>
+                <p>Máscaras, textiles y piezas simbólicas que reflejan la identidad mazateca.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Fotos/images(165).jfif" loading="lazy">
+            <div class="info">
+                <h3>Teonanacatl</h3>
+                <p>Hongos alucinógenos que tienen el poder de curar heridas del pasado en buenas manos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--GALERÍA-->
+<section>
+    <h2 class="section-title" id="gal">Galería cultural</h2>
+    <div class="galeria-grid">
+        <div class="foto">
+            <img src="Fotos/Dnza2.jpg" loading="lazy">
+            <p>Danzas / Rituales</p>
+        </div>
+        <div class="foto">
+            <img src="Fotos/rios.jpg" loading="lazy">
+            <p>Naturaleza sagrada</p>
+        </div>
+        <div class="foto">
+            <img src="Fotos/Cerro.png" loading="lazy">
+            <p>Cerro de la adoración</p>
+        </div>
+        <div class="foto">
+            <img src="Fotos/descarga(3).jfif" loading="lazy">
+            <p>Cascadas</p>
+        </div>
+        <div class="foto">
+            <img src="Fotos/descarga.jfif" loading="lazy">
+            <p>Iglesia comunitaria</p>
+        </div>
+        <div class="foto">
+            <img src="Fotos/Fiestas.jpeg" loading="lazy">
+            <p>Fietas patronales</p>
+        </div>
+        <div class="foto">
+            <img src="Fotos/Home.jpg" loading="lazy">
+            <p>Huehuentones</p>
+        </div>
+        <div class="foto">
+            <img src="Fotos/Entra.png" loading="lazy">
+            <p>Entrada al pueblo</p>
+        </div>
+        <div class="foto">
+            <img src="Fotos/atardecer.jpg" loading="lazy">
+            <p>Atardeceres en Huautla</p>
+        </div>
+        <div class="foto">
+            <img src="Fotos/c1.png" loading="lazy">
+            <p>Cerro desde el piso</p>
+        </div>
+        <div class="foto">
+            <img src="Fotos/Huautla.jpg" loading="lazy">
+            <p>Vista desde el aire</p>
+        </div>
+        <div class="foto">
+            <img src="Fotos/danza.webp" loading="lazy">
+            <p>Cultura / música</p>
+        </div>
+        <div class="lightbox" id="lightbox">
+          <span id="closeLightbox">&times;</span>
+          <span class="arrow prev" id="prev">&#10094;</span>
+        
+          <div class="lightbox-content">
+            <img src="" id="lightboxImg">
+            <p id="lightboxTitle"></p>
+          </div>
+        
+          <span class="arrow next" id="next">&#10095;</span>
+        </div>
+    </div>
+</section>
+  <!-- DANZAS -->
+  <section>
+    <h2 class="section-title">Danzas Tradicionales</h2>
+
+    <div class="danza">
+      <img src="Fotos/dza-1.jpg" loading="lazy">
+      <div>
+        <h3>Danza de los Huehuentones</h3>
+        <p>
+          Es la danza más emblemática de Huautla. Se presenta principalmente durante Día de Muertos. Los danzantes usan máscaras, ropa tradicional y realizan recorridos por calles y panteones. Simboliza la convivencia entre el mundo de los vivos y los difuntos, y es una expresión profunda de la cosmovisión mazateca.
+        </p>
+      </div>
+    </div>
+
+    <div class="danza">
+      <img src="Fotos/Negritos.jpg" loading="lazy">
+      <div>
+        <h3>Danza de los Negritos</h3>
+        <p>
+          Danza de origen colonial, adaptada por los pueblos indígenas. Se baila en fiestas patronales y celebraciones religiosas, con música tradicional y vestuario colorido. Representa episodios históricos y religiosos, combinando tradición indígena y española.
+        </p>
+      </div>
+    </div>
+
+    <div class="danza">
+      <img src="Fotos/dza-4.webp" loading="lazy">
+      <div>
+        <h3>Danza de los Santiagos</h3>
+        <p>
+          Se presenta en festividades religiosas importantes. Es una danza ritual que simboliza la lucha entre el bien y el mal, con personajes bien definidos y una narrativa escénica que se transmite de generación en generación.
+        </p>
+      </div>
+    </div>
+
+    <div class="danza">
+      <img src="Fotos/dza-2.jpg" loading="lazy">
+      <div>
+        <h3>Danza de la Malinche</h3>
+        <p>
+          Relacionada con celebraciones comunitarias y patronales. A través del baile se narran pasajes históricos del periodo de la Conquista, adaptados a la visión cultural local.
+        </p>
+      </div>
+    </div>
+
+    <div class="danza">
+      <img src="Fotos/Dnza2.jpg" loading="lazy">
+      <div>
+        <h3>Danzas Tradicionales Mazatecas</h3>
+        <p>
+          Incluyen bailes comunitarios acompañados de violín, guitarra y jarana, que se realizan durante mayordomías y fiestas locales. No siempre tienen un nombre específico, pero son fundamentales para la convivencia social y la transmisión cultural.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="artesanias-section">
+        <h2 class="section-title">Días Festivos</h2>
+        <p class="section-text">Presiona el apartado del texto para ver su descripción</p>
+        <div class="artesanias-grid">
+            <!-- 1 -->
+            <div class="car">
+                <img src="Fotos/F6.jpg" loading="lazy" alt="Día del señor de las tres caídas">
+                <button class="accordion">Fiesta del Señor de las tres caídas</button>
+                <div class="panel">
+                    <p>Se realiza el tercer viernes de Cuaresma, con misas, procesiones, música y actividades religiosas.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- 2 -->
+            <div class="car">
+                <img src="Fotos/F5.jfif" loading="lazy" alt="Fiesta a la Virgen de Natividad">
+                <button class="accordion">Virgen de la natividad</button>
+                <div class="panel">
+                    <p>Fiesta en honor a la Virgen de Natividad. Se celebra el 7 y 8 e septiembre
+                    </p>
+                </div>
+            </div>
+    
+            <!-- 3 -->
+            <div class="car">
+                <img src="Fotos/F4.jpg" loading="lazy" alt="Fiesta a la Virgen de Juquila">
+                <button class="accordion">Virgen de la Santa María Juquila</button>
+                <div class="panel">
+                    <p>Tradicional festejo dedicado a esas advocación mariana. Se celebra el 7 y 8 de diciembre
+                    </p>
+                </div>
+            </div>
+    
+            <!-- 4 -->
+            <div class="car">
+                <img src="Fotos/F2.png" loading="lazy" alt="Fiesta de San Juan Evangelista">
+                <button class="accordion">San Juan Evangelista</button>
+                <div class="panel">
+                    <p>Considerado uno de los santos más importantes del municipio. Se celebra el 27 de diciembre.</p>
+                </div>
+            </div>
+    
+            <!-- 5 -->
+            <div class="car">
+                <img src="Fotos/F3.jpg" loading="lazy" alt="Festival a María Sabina">
+                <button class="accordion">Festival a María Sabina</button>
+                <div class="panel">
+                    <p>Evento cultural en honor a la célebre sanadora mazateca María Sabina, con actividades artísticas, exposiciones y gastronomía.</p>
+                </div>
+            </div>
+    
+            <!-- 6 -->
+            <div class="car">
+                <img src="Fotos/F1.jpg" loading="lazy" alt="Fiestas de Mayordomía">
+                <button class="accordion">Fiestas de Mayordomía</button>
+                <div class="panel">
+                    <p>Se realizan durante todo el año, dependiendo del santo del barrio o comunidad.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<button id="backToTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<footer class="footer parallax-footer">
+  <div class="footer-overlay"></div>
+
+  <div class="footer-container reveal">
+    
+    <div class="footer-brand">
+      <h2>Huautla de Jiménez</h2>
+      <p>Donde la naturaleza y el espíritu se encuentran.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Explora</h3>
+      <ul>
+        <li><a href="Servicios.html">Lugares turísticos</a></li>
+        <li><a href="index.html">Cultura Mazateca</a></li>
+        <li><a href="Gastro.html">Gastronomía</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="Comentar.html">Comentar</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+        <h3>Contacto</h3>
+        <p>Email: <a href="garciabenjamtz@gmail.com">garciabenjamtz@gmail.com</a></p>
+        <p>Tel: +52 000 000 0000</p>
+        <div class="social">
+            <a href="AB Martínez.facebook" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.4V12h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z" />
+                </svg>
+            </a>
+            <a href="Benyi_10_100109.instagram" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 6a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm4.5-.9a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+            </a>
+            <a href="SoyBenjamin.tiktok" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M16 3c.3 2 1.9 3.6 3.9 3.9v3.1c-1.5 0-3-.5-4.2-1.3v5.8a5.5 5.5 0 1 1-5.5-5.5c.4 0 .8 0 1.2.1v3.2a2.3 2.3 0 1 0 1.6 2.2V3h3z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+  </div>
+</footer>
+
+  <script src="Js/footer.js"></script>
+  <script src="Js/script.js"></script>
+  <script src="Js/Efecto.js"></script>
+  <script>
+    const accordions = document.querySelectorAll(".accordion");
+
+    accordions.forEach(btn => {
+      btn.addEventListener("click", function () {
+        const panel = this.nextElementSibling;
+
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    });
+  </script>
+  <script>
+    const slides = document.querySelectorAll(".hero-slide");
+    let current = 0;
+  
+    function changeSlide() {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }
+  
+    setInterval(changeSlide, 10000);
+  </script>
+</body>
+</html>

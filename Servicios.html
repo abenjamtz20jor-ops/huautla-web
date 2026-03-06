@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lugares Sagrados | Huautla de Jiménez</title>
+  <link rel="stylesheet" href="CSS/Servicios.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <div class="logo">Cultura en Huautla</div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="menu" id="menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="De nosotros.html">Cultura</a></li>
+    <li><a class="active" href="">Lugares</a></li>
+    <li><a href="Gastro.html">Gastronomía</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="Inicio">
+  <video autoplay muted loop playsinline>
+    <source src="Videos/Video_2-1.mp4" type="video/mp4">
+  </video>
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <h1>HUAUTLA DE JIMÉNEZ</h1>
+    <button class="button"><a onclick="document.getElementById('mapa').scrollIntoView({behavior:'smooth'})">Descubrir más</a></button>
+  </div>
+</section>
+
+<main>
+
+<!-- TIMELINE -->
+<section class="timeline-section">
+  <h2 class="section-title">Línea del Tiempo Histórica</h2>
+  <p class="section-text">Para saber como es que llego a ser un pueblo mágico de Oaxaca</p>
+
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3><span class="year">Siglos X–XIV</span> Consolidación Mazateca</h3>
+        <p>
+          Se fortalecen estructuras comunitarias, lengua y sistemas rituales 
+          propios en la región montañosa.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3><span class="year">Antes del siglo XV</span>Origen Mazateco</h3>
+        <p>Desarrollo de la cosmovisión mazateca en la región montañosa.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3><span class="year">1560</span> Fundación Colonial</h3>
+        <p>
+          Se establece formalmente el poblado bajo organización colonial,
+          integrando estructuras religiosas y administrativas.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3><span class="year">1520–1600</span>Periodo Colonial</h3>
+        <p>Fusión entre tradiciones indígenas y estructuras religiosas españolas.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3><span class="year">Siglo XVII–XVIII</span> Preservación Tradicional</h3>
+        <p>
+          A pesar de la influencia colonial, las comunidades mantienen 
+          rituales, medicina ancestral y lengua mazateca.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3><span class="year">1950–1960</span>Proyección Internacional</h3>
+        <p>Reconocimiento mundial de la medicina tradicional mazateca.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3><span class="year">1955</span> Encuentro Cultural Global</h3>
+        <p>
+          Investigadores y visitantes extranjeros llegan a la región,
+          generando proyección internacional de la tradición espiritual mazateca.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3><span class="year">1990</span> Fortalecimiento Cultural</h3>
+        <p>
+          Se consolidan festivales, rescate de danzas y programas de 
+          preservación de identidad mazateca.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3><span class="year">Siglo XXI</span>Turismo Cultural</h3>
+        <p>Preservación de identidad y fortalecimiento cultural contemporáneo.</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <h3><span class="year">2020–Actualidad</span> Identidad Viva</h3>
+        <p>
+          Huautla continúa siendo referente cultural y espiritual,
+          combinando tradición ancestral y turismo responsable.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="full-mantra fade">
+  <p>
+    “El territorio no se visita,  
+    se escucha.”
+  </p>
+</section>
+
+<!-- CERRO DE LA ADORACIÓN -->
+<section class="split-section fade">
+  <div class="text-block">
+    <h2>Cerro de la Adoración</h2>
+    <p>
+      Punto de observación espiritual y contemplación profunda.
+      Desde su cima, la neblina envuelve el paisaje
+      y crea una sensación de suspensión del tiempo.
+      <br><br>
+      Tradicionalmente asociado al silencio,
+      la introspección y la conexión con la montaña.
+    </p>
+  </div>
+  <div class="image-block parallax">
+    <img src="Fotos/Cerro.png" loading="lazy" alt="Cerro de la Adoración">
+  </div>
+</section>
+
+<section class="full-mantra fade dark">
+  <p>
+    “La montaña no responde,  
+    revela.”
+  </p>
+</section>
+
+<!-- CUEVAS -->
+<section class="split-section reverse fade">
+  <div class="text-block">
+    <h2>Cuevas de la región</h2>
+    <p>
+      Las cuevas han sido consideradas espacios de resguardo,
+      reflexión y conocimiento ancestral.
+      <br><br>
+      En la tradición mazateca,
+      representan el vientre de la tierra
+      y un punto de contacto con el mundo interior.
+    </p>
+  </div>
+  <div class="image-block parallax">
+    <img src="Fotos/Cu-3.jpg" loading="lazy" alt="Cuevas de Huautla">
+  </div>
+</section>
+
+<!-- CASCADAS -->
+<section class="split-section fade">
+  <div class="text-block">
+    <h2>Cascadas y ríos</h2>
+    <p>
+      El agua marca el pulso natural del territorio.
+      Las cascadas y ríos de Huautla
+      no son espacios de ruido,
+      sino de pausa y purificación.
+      <br><br>
+      Su sonido constante acompaña al visitante
+      y favorece la calma mental.
+    </p>
+  </div>
+  <div class="image-block parallax">
+    <img src="Fotos/cascadas.png" loading="lazy" alt="Cascadas de Huautla">
+  </div>
+</section>
+
+<section class="full-mantra fade">
+  <p>
+    “El agua limpia  
+    lo que la palabra no alcanza.”
+  </p>
+</section>
+
+<!-- LOMA CHAPULTEPEC -->
+<section class="split-section reverse fade">
+  <div class="text-block">
+    <h2>Loma Chapultepec</h2>
+    <p>
+      Espacio de convivencia comunitaria
+      y transmisión de saberes tradicionales.
+      <br><br>
+      Asociado al aprendizaje,
+      la observación de la naturaleza
+      y la relación respetuosa entre persona y territorio.
+    </p>
+  </div>
+  <div class="image-block parallax">
+    <img src="Fotos/arton25391.webp" loading="lazy" alt="Loma Chapultepec">
+  </div>
+</section>
+
+<!-- CAMINO INTERIOR -->
+<section class="split-section fade">
+  <div class="text-block">
+    <h2>El camino interior</h2>
+    <p>
+      Recorrer Huautla implica disminuir el ritmo,
+      observar con atención
+      y comprender que el valor espiritual
+      no siempre es visible.
+      <br><br>
+      Aquí, el viaje ocurre tanto afuera
+      como dentro.
+    </p>
+  </div>
+  <div class="image-block parallax">
+    <img src="Fotos/Huautla.jpg" loading="lazy" alt="Camino en Huautla">
+  </div>
+</section>
+
+<section class="full-mantra fade dark">
+  <p>
+    “Quien camina con respeto,  
+    nunca camina solo.”
+  </p>
+</section>
+
+<!--Mapa interactivo-->
+<section class="map-section fade" id="mapa">
+
+  <div class="map-header">
+    <h2>Mapa Interactivo</h2>
+    <p>Explora los puntos naturales, cuevas y espacios comunitarios de Huautla</p>
+  </div>
+
+  <div class="map-container">
+    <div id="map"></div>
+
+    <div class="map-info">
+      <img id="infoImg" src="Fotos/Huautla.jpg" alt="">
+      <h3 id="infoTitle">Explora el territorio</h3>
+      <p id="infoDesc">
+        Selecciona un punto en el mapa para conocer más sobre este espacio.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+<button id="backToTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<footer class="footer parallax-footer">
+  <div class="footer-overlay"></div>
+
+  <div class="footer-container reveal">
+    
+    <div class="footer-brand">
+      <h2>Huautla de Jiménez</h2>
+      <p>Donde la naturaleza y el espíritu se encuentran.</p>
+    </div>
+
+    <div class="footer-links">
+      <h3>Explora</h3>
+      <ul>
+        <li><a onclick="document.getElementById('Inicio').scrollIntoView({behavior:'smooth'})">Lugares turísticos</a></li>
+        <li><a href="index.html">Cultura Mazateca</a></li>
+        <li><a href="Gastro.html">Gastronomía</a></li>
+        <li><a href="De nosotros.html">Eventos</a></li>
+        <li><a href="Comentar.html">Comentar</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+        <h3>Contacto</h3>
+        <p>Email: garciabenjamtz@gmail.com</p>
+        <p>Tel: +52 000 000 0000</p>
+        <div class="social">
+            <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.4V12h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z" />
+                </svg>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 6a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm4.5-.9a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M16 3c.3 2 1.9 3.6 3.9 3.9v3.1c-1.5 0-3-.5-4.2-1.3v5.8a5.5 5.5 0 1 1-5.5-5.5c.4 0 .8 0 1.2.1v3.2a2.3 2.3 0 1 0 1.6 2.2V3h3z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="Js/footer.js"></script>
+<script src="Js/lugares.js"></script>
+<script>
+/* ===== TIMELINE SCROLL ANIMATION ===== */
+document.addEventListener("DOMContentLoaded", function(){
+
+  const items = document.querySelectorAll(".timeline-item");
+
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+      if(entry.isIntersecting){
+        entry.target.classList.add("show");
+      } else {
+        entry.target.classList.remove("show");
+      }
+    });
+  }, {threshold:0.3});
+
+  items.forEach((item,index)=>{
+    if(index % 2 === 0){
+      item.classList.add("from-top");
+    } else {
+      item.classList.add("from-bottom");
+    }
+    observer.observe(item);
+  });
+});
+</script>
+
+</body>
+</html>

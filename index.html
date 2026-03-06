@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultura en Huautla de Jiménez, Oaxaca</title>
+    <link rel="stylesheet" href="CSS/Aparien.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">Cultura en Huautla</div>
+
+    <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <ul class="menu" id="menu">
+      <li><a class="active" href="">Inicio</a></li>
+      <li><a href="De nosotros.html">Cultura</a></li>
+      <li><a href="Servicios.html">Lugares</a></li>
+      <li><a href="Gastro.html">Gastronomía</a></li>
+    </ul>
+  </nav>
+
+    <section class="home" id="home">
+        <video class="video-slider active" src="Videos/Video_2-1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <video class="video-slider" src="Videos/Video_2.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <video class="video-slider" src="Videos/Video_3.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <video class="video-slider" src="Videos/Video_4.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        <video class="video-slider" src="Videos/video_1.mp4" autoplay muted loop playsinline preload="metadata"></video>
+
+        <div class="content active">
+            <h1>Huautla<br><span>de Jiménez.</span></h1>
+            <p>Un pueblo cultural significativo de Oaxaca<br>que en si pertenece a la categoría de pueblos mágicos en Oaxaca</p>
+            <a onclick="document.getElementById('blog-1').scrollIntoView({behavior:'smooth'})">Historia</a>
+        </div>
+        <div class="content">
+            <h1>Lugar de<br><span>María Sabina.</span></h1>
+            <p>Se le conoce así porque en si es el lugar de origen de esta chamana de este pueblo que dejó sus conocimientos a algunas personas de este lugar</p>
+            <a href="">Ubicación</a>
+        </div>
+        <div class="content">
+            <h1>Lugares<br><span>Turísticos.</span></h1>
+            <p>En si, los lugares más conocidos allí son los siguientes: el cerro de la adoración, el museo de María Sabina, las cascadas, etc.</p>
+            <a onclick="document.getElementById('blog-3').scrollIntoView({behavior:'smooth'})">Saber más</a>
+        </div>
+        <div class="content">
+            <h1>Huautla<br><span>Su vegetación.</span></h1>
+            <p>La vegetación de Huautla de Jiménez se<br>basa por el clima que se tiene allí mismo ya que hay flores que no se dan en algunos lugares cerca de la región</p>
+            <a onclick="document.getElementById('blog-4').scrollIntoView({behavior:'smooth'})">Flora y fauna</a>
+        </div>
+        <div class="content">
+            <h1>Gastronomía<br><span>de Huautla</span></h1>
+            <p>La gastronomía de este lugar se basa más que nada en el atole y los tamales, aunque también se basa en el pan que se hace a diario en la panadería "La Flor"</p>
+            <a onclick="document.getElementById('blog-5').scrollIntoView({behavior:'smooth'})">Saber más</a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+
+        <div class="hero-overlay"></div>
+    </section>
+
+    <section class="icons container">
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="Icons/instagram.ico" loading="lazy" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Cultura mazateca.</h3>
+                <p>
+                    Raices, historia y más
+                </p>
+            </div>
+        </div>
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="Icons/Tiktok.ico" loading="lazy" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Turismo mazateco.</h3>
+                <p>
+                    Lugares a visitar
+                </p>
+            </div>
+        </div>
+        <div class="icon-1">
+            <div class="icon-img">
+                <img src="Icons/Face.ico" loading="lazy" alt="">
+            </div>
+            <div class="icon-txt">
+                <h3>Raices mazatecas.</h3>
+                <p>
+                    Identidad de la región
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog container">
+
+        <div class="blog-1" id="blog-1">
+            <img src="Fotos/huehuentones-42.jpg" loading="lazy">
+            <h2>Historia.</h2>
+            <p>
+                Este pequeño, pero significativo lugar recibe el nombre de Huautla 
+                que viene significando el "Lugar de las Águilas", por su traducción 
+                a la lengua náhuatl, más aparte es el lugar de nacimiento de 
+                María Sabina, chamana mazateca que experimentó profundamente con 
+                los hongos alucinógenos (teonanacatl) llamados de cariño (los niños santos).
+            </p>
+            <a onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})"class="btn-2">Información</a>
+        </div>
+        
+        <div class="blog-1" id="blog-3">
+            <img src="Fotos/Sis.jpg" loading="lazy">
+            <h2>Zonas Turísticas.</h2>
+            <p>
+                Las zonas turísticas más importantes de este hermoso pueblo son 
+                el cerro de la adoración, las cascadas que se encuentran en el 
+                Puente de Fierro ubicado a 10 minutos de Huautla, otras zonas serían 
+                la casa "Mamá Julia", ya que ahí podrás experimentar una sesión de los 
+                hongos alucinógenos.
+            </p>
+            <a href="Servicios.html" class="btn-2">Saber más</a>
+        </div>
+    </section>
+
+    <section class="blogs container">
+
+        <div class="blogs-1" id="blog-4">
+            <img src="Fotos/cascadas.png" loading="lazy">
+            <h2>Flora y fauna.</h2>
+            <p>
+                En este lugar podemos encontrar los llamados hongos alucinógenos que en si como su nombre lo dice son para eso, pero estando en buenas manos puedes tomar una sesión con estos hongos para darte una conexión espiritual y olvidarte de todas las cosas por un momento.
+            </p>
+            <a href="#" class="btn-2">Información</a>
+        </div>
+
+        <div class="blogs-1" id="blog-5">
+            <img src="Fotos/Tejate.webp" loading="lazy">
+            <h2>Gastronomía.</h2>
+            <p>
+                Las personas conocen muy poco de la comida mazateca, pero lo que 
+                destaca de este pueblo son los tamales de tesmole y el pilte 
+                que además de esto también tiene una bebida que se llama atole agrio,
+                además, que tan fácil podrías encontrar bebidas tradicionales en alguna otra parte.
+            </p>
+            <a href="Gastro.html" class="btn-2">Saber más</a>
+        </div>
+    </section>
+
+    <section class="cards">
+    
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="Fotos/Huautla-de-Jimenez.10.gif" loading="lazy">
+                <h3>Ubicación</h3>
+            </div>
+            <div class="card-back">
+                <h3>Ubicación</h3>
+                <p>Huautla de Jiménez se localiza en la Sierra Mazateca.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="Fotos/rios.jpg" loading="lazy">
+                <h3>Naturaleza sagrada</h3>
+            </div>
+            <div class="card-back">
+                <h3>Naturaleza sagrada</h3>
+                <p>Montañas y cuevas forman parte de la cosmovisión mazateca.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="Fotos/danza.webp" loading="lazy">
+                <h3>Danzas</h3>
+            </div>
+            <div class="card-back">
+                <h3>Danzas</h3>
+                <p>Los huehuentones expresan memoria y conexión espiritual.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="Fotos/descarga (1).jfif" loading="lazy">
+                <h3>Turismo responsable</h3>
+            </div>
+            <div class="card-back">
+                <h3>Turismo responsable</h3>
+                <p>Visitar Huautla implica respeto a su comunidad y tradiciones.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="Fotos/Huautla-de-Jimenez.10.gif" loading="lazy">
+                <h3>Ubicación</h3>
+            </div>
+            <div class="card-back">
+                <h3>Ubicación</h3>
+                <p>Huautla de Jiménez se localiza en la Sierra Mazateca.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="Fotos/rios.jpg" loading="lazy">
+                <h3>Naturaleza sagrada</h3>
+            </div>
+            <div class="card-back">
+                <h3>Naturaleza sagrada</h3>
+                <p>Montañas y cuevas forman parte de la cosmovisión mazateca.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="Fotos/danza.webp" loading="lazy">
+                <h3>Danzas</h3>
+            </div>
+            <div class="card-back">
+                <h3>Danzas</h3>
+                <p>Los huehuentones expresan memoria y conexión espiritual.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="Fotos/descarga (1).jfif" loading="lazy">
+                <h3>Turismo responsable</h3>
+            </div>
+            <div class="card-back">
+                <h3>Turismo responsable</h3>
+                <p>Visitar Huautla implica respeto a su comunidad y tradiciones.</p>
+            </div>
+        </div>
+    </div>
+
+    </section>
+    
+    <section class="artesanias-section">
+        <h2>Artesanías Mazatecas</h2>
+        <p class="section-text">Presiona la parte de los textos para ver su descripción</p>
+    
+        <div class="artesanias-grid">
+    
+            <!-- 1 -->
+            <div class="car">
+                <img src="Fotos/art9.jpg" loading="lazy" alt="Huipil mazateco bordado">
+                <button class="accordion">Huipil mazateco bordado</button>
+                <div class="panel">
+                    <p>Prenda tradicional bordada a mano con símbolos que representan la identidad y cosmovisión mazateca.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- 2 -->
+            <div class="car">
+                <img src="Fotos/art3.webp" loading="lazy" alt="Quexquémitl mazateco">
+                <button class="accordion">Quexquémitl mazateco</button>
+                <div class="panel">
+                    <p>Prenda corta de forma triangular utilizada como complemento ceremonial y tradicional.</p>
+                </div>
+            </div>
+    
+            <!-- 3 -->
+            <div class="car">
+                <img src="Fotos/art5.jpg" loading="lazy" alt="Enredo tradicional mazateco">
+                <button class="accordion">Enredo tradicional mazateco</button>
+                <div class="panel">
+                    <p>Falda larga tradicional que forma parte esencial del atuendo femenino mazateco.</p>
+                </div>
+            </div>
+    
+            <!-- 4 -->
+            <div class="car">
+                <img src="Fotos/art12.webp" loading="lazy" alt="Faja tejida">
+                <button class="accordion">Faja tejida en telar de cintura</button>
+                <div class="panel">
+                    <p>Accesorio tejido artesanalmente que se utiliza para ajustar el enredo tradicional.</p>
+                </div>
+            </div>
+    
+            <!-- 5 -->
+            <div class="car">
+                <img src="Fotos/art11.jpg" loading="lazy" alt="Rebozo mazateco">
+                <button class="accordion">Rebozo mazateco artesanal</button>
+                <div class="panel">
+                    <p>Prenda versátil elaborada en telar, utilizada para cubrirse o cargar objetos.</p>
+                </div>
+            </div>
+    
+            <!-- 6 -->
+            <div class="car">
+                <img src="Fotos/art2.jpg" loading="lazy" alt="Blusa bordada">
+                <button class="accordion">Blusa de manta bordada a mano</button>
+                <div class="panel">
+                    <p>Blusa tradicional decorada con bordados florales hechos manualmente.</p>
+                </div>
+            </div>
+    
+            <!-- 7 -->
+            <div class="car">
+                <img src="Fotos/art6.jpg" loading="lazy" alt="Servilletas bordadas">
+                <button class="accordion">Servilletas bordadas mazatecas</button>
+                <div class="panel">
+                    <p>Piezas textiles decorativas con bordados tradicionales utilizados en el hogar.</p>
+                </div>
+            </div>
+    
+            <!-- 8 -->
+            <div class="car">
+                <img src="Fotos/art13.jpg" loading="lazy" alt="Manteles bordados">
+                <button class="accordion">Manteles bordados con motivos florales</button>
+                <div class="panel">
+                    <p>Manteles artesanales que incorporan bordados coloridos inspirados en la naturaleza.</p>
+                </div>
+            </div>
+    
+            <!-- 9 -->
+            <div class="car">
+                <img src="Fotos/art8.jpg" loading="lazy" alt="Morral tejido">
+                <button class="accordion">Morral o bolsa tejida de fibra natural</button>
+                <div class="panel">
+                    <p>Bolsa artesanal tejida con fibras naturales utilizada para uso cotidiano.</p>
+                </div>
+            </div>
+    
+            <!-- 10 -->
+            <div class="car">
+                <img src="Fotos/art4.jpg" loading="lazy" alt="Canastas de carrizo">
+                <button class="accordion">Canastas de carrizo o palma</button>
+                <div class="panel">
+                    <p>Elaboradas manualmente con fibras vegetales para almacenamiento y comercio.</p>
+                </div>
+            </div>
+    
+            <!-- 11 -->
+            <div class="car">
+                <img src="Fotos/art1.jpg" loading="lazy" alt="Ollas de barro">
+                <button class="accordion">Ollas de barro artesanal</button>
+                <div class="panel">
+                    <p>Utensilios tradicionales moldeados a mano y cocidos en horno artesanal.</p>
+                </div>
+            </div>
+    
+            <!-- 12 -->
+            <div class="car">
+                <img src="Fotos/art7.jpg" loading="lazy" alt="Figuras decorativas de barro">
+                <button class="accordion">Figuras decorativas de barro</button>
+                <div class="panel">
+                    <p>Piezas decorativas moldeadas artesanalmente que representan elementos culturales y naturales.</p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+<button id="backToTop" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none">
+    <path d="M12 19V5M12 5L5 12M12 5L19 12"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"/>
+  </svg>
+</button>
+
+<footer class="footer parallax-footer">
+<div class="footer-overlay"></div>
+
+<div class="footer-container reveal">
+
+    <div class="footer-brand">
+        <h2>Huautla de Jiménez</h2>
+        <p>Donde la naturaleza y el espíritu se encuentran.</p>
+    </div>
+
+    <div class="footer-links">
+        <h3>Explora</h3>
+        <ul>
+            <li><a href="Servicios.html">Lugares turísticos</a></li>
+            <li><a onclick="document.getElementById('home').scrollIntoView({behavior:'smooth'})" class="button">Cultura
+                    Mazateca</a></li>
+            <li><a href="Gastro.html">Gastronomía</a></li>
+            <li><a href="De nosotros.html">Eventos</a></li>
+            <li><a href="Comentar.html">Comentar</a></li>
+        </ul>
+    </div>
+
+    <div class="footer-contact">
+        <h3>Contacto</h3>
+        <p>Email: garciabenjamtz@gmail.com</p>
+        <p>Tel: +52 000 000 0000</p>
+        <div class="social">
+            <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M22 12a10 10 0 1 0-11.6 9.9v-7h-2.4V12h2.4V9.8c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12z" />
+                </svg>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm5 6a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm4.5-.9a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M16 3c.3 2 1.9 3.6 3.9 3.9v3.1c-1.5 0-3-.5-4.2-1.3v5.8a5.5 5.5 0 1 1-5.5-5.5c.4 0 .8 0 1.2.1v3.2a2.3 2.3 0 1 0 1.6 2.2V3h3z" />
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>
+</footer>
+
+    <script src="Js/pagina.js"></script>
+    <script src="Js/footer.js"></script>
+    <script>
+        const accordions = document.querySelectorAll(".accordion");
+
+        accordions.forEach(btn => {
+            btn.addEventListener("click", function () {
+                const panel = this.nextElementSibling;
+
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        });
+    </script>
+    
+</body>
+
+</html>

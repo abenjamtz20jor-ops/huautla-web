@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comenta sobre el sitio</title>
+    <link rel="stylesheet" href="Fotos/Logo Hdej.png">
+    <link rel="stylesheet" href="CSS/comentar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">Cultura en Huautla</div>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <ul class="menu" id="menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="De nosotros.html">Cultura</a></li>
+    <li><a href="Servicios.html">Lugares</a></li>
+    <li><a href="Gastro.html">Gastronomía</a></li>
+  </ul>
+</nav>
+
+<section class="comentarios-section reveal">
+  <h2>Comentarios</h2>
+  <p>¿Cúal fue tu experiencia con este sitio web?</p>
+
+  <form id="comentarioForm" class="comentario-form">
+    <input type="text" id="nombre" placeholder="Tu nombre" required>
+    
+    <div class="rating">
+      <span data-value="1">★</span>
+      <span data-value="2">★</span>
+      <span data-value="3">★</span>
+      <span data-value="4">★</span>
+      <span data-value="5">★</span>
+    </div>
+
+    <textarea id="mensaje" placeholder="Escribe tu comentario..." required></textarea>
+    <button type="submit">Publicar</button>
+  </form>
+
+  <div id="listaComentarios" class="lista-comentarios"></div>
+</section>
+
+<script src="Js/Comentarios.js"></script>
+<script src="Js/script.js"></script>
+
+</body>
+</html>
