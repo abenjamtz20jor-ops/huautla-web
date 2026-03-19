@@ -246,7 +246,7 @@ section{
 .blogs{
   margin-top: 10%;
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(255px,1fr));
   gap:40px;
 }
 
@@ -313,7 +313,7 @@ section{
 
 /* CARD */
 .card{
-  width:300px;
+  width:auto;
   perspective:2000px;
 }
 
